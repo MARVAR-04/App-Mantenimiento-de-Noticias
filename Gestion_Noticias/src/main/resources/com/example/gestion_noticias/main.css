@@ -1,0 +1,9 @@
+.menu-bar .menu-item {
+    -fx-background-color: #444444; /* Color de fondo */
+    -fx-text-fill: white; /* Color del texto */
+}
+
+
+.menu-bar .label {
+    -fx-text-fill: white; /* Color del texto en la barra de menú */
+}
