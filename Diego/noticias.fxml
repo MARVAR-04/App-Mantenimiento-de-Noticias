@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="10" style="-fx-background-color: #F2F2F2; -fx-padding: 50; -fx-width: 100%; -fx-min-width: 800;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <HBox spacing="10" style="-fx-padding: 10;">
+            <children>
+                <Label style="-fx-font-weight: bold; -fx-font-size: 20;" text="Noticias" />
+                <TextField fx:id="searchField" promptText="Buscar noticias..." HBox.hgrow="ALWAYS" />
+            </children>
+        </HBox>
+        <ListView fx:id="newsListView" prefHeight="370.0" prefWidth="490.0" VBox.vgrow="ALWAYS" />
+    </children>
+</VBox>
