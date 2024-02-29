@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.Button?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.gestion_noticias.PerfilController"
+      prefHeight="400.0" prefWidth="600.0"
+      spacing="10"
+      alignment="CENTER">
+
+    <!-- Sección de la foto del usuario -->
+    <VBox alignment="CENTER" styleClass="imagen-perfil">
+        <ImageView fx:id="userPhoto" fitHeight="150" fitWidth="150" />
+    </VBox>
+
+    <!-- Sección del nombre y apellido del usuario -->
+    <VBox alignment="CENTER" spacing="10" styleClass="nombre-usuario">
+        <Label fx:id="nameLabel" style="-fx-font-size: 20;" />
+        <Label fx:id="lastNameLabel" style="-fx-font-size: 20;" />
+    </VBox>
+
+    <!-- Sección de la descripción del usuario -->
+    <VBox alignment="CENTER" spacing="10" styleClass="descripcion">
+        <Label text="Descripción del usuario:" />
+        <TextArea fx:id="descriptionTextArea" prefWidth="300" prefHeight="100" maxWidth="300" editable="false" />
+    </VBox>
+
+    <!-- Botón para ir a noticias -->
+    <Button text="Ir a Noticias" onAction="#irANoticias" style="-fx-font-size: 16pt; min-width: 200px;" />
+</VBox>

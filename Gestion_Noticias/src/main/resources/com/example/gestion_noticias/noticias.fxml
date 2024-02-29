@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="837.0" prefWidth="933.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestion_noticias.NoticiasController">
+
+    <VBox prefWidth="800.0" style="-fx-background-color: #333333;" />
+
+    <VBox layoutY="117.0" spacing="10">
+        <!-- Noticia 1 -->
+        <VBox spacing="10" style="-fx-background-color: #F5F5F5; -fx-padding: 10;">
+            <HBox spacing="10">
+                <ImageView fitHeight="300.0" fitWidth="450.0">
+                    <image>
+                        <Image url="https://img2.rtve.es/v/15972405/?w=400" />
+                    </image>
+                </ImageView>
+                <VBox>
+                    <Text style="-fx-font-weight: bold; -fx-font-size: 20;" text="Putin Ataca de Nuevo" />
+                    <Text text="Nos enfrentamos al nuevo ataque" />
+                </VBox>
+            </HBox>
+            <HBox spacing="10">
+                <Button onAction="#verNoticias" text="Ver Noticia" />
+                <Button onAction="#eliminarNoticia" text="Eliminar Noticia" />
+            </HBox>
+        </VBox>
+
+        <!-- Noticia 2 -->
+        <VBox spacing="10" style="-fx-background-color: #F5F5F5; -fx-padding: 10;">
+            <HBox spacing="10">
+                <ImageView fitHeight="300.0" fitWidth="450.0">
+                    <image>
+                        <Image url="https://2.bp.blogspot.com/-EwCOKKurIDE/XdrW8qXFMTI/AAAAAAAAfNA/3jyoWpr1lsE8xwC35VRpp7K7IXkoHBeuQCLcBGAsYHQ/s1600/periodicos-noticias-del-mundo.jpg" />
+                    </image>
+                </ImageView>
+                <VBox>
+                    <Text style="-fx-font-weight: bold; -fx-font-size: 20;" text="Título de la Noticia 2" />
+                    <Text text="Descripción de la Noticia 2" />
+                </VBox>
+            </HBox>
+            <HBox spacing="10">
+                <Button onAction="#verNoticias" text="Ver Noticia" />
+                <Button onAction="#eliminarNoticia" text="Eliminar Noticia" />
+            </HBox>
+        </VBox>
+    </VBox>
+
+                <ImageView fitHeight="58.0" fitWidth="60.0" layoutX="879.0" layoutY="-8.0">
+        <image>
+            <Image url="https://th.bing.com/th/id/OIG2.MNi8.aox3F4Widvmlg1j?w=270h=270c=6r=0o=5dpr=1.9pid=ImgGn" />
+        </image>
+    </ImageView>
+     <MenuBar prefHeight="46.0" prefWidth="939.0" style="-fx-background-color: #006CAE;">
+         <menus>
+             <Menu style="-fx-font-weight: bold; -fx-font-size: 20;" text="Usuario">
+                 <items>
+                     <MenuItem onAction="#iniciarSesion" text="Iniciar Sesión" />
+                     <MenuItem onAction="#irAPerfil" text="Ir a Perfil" />
+                 </items>
+             </Menu>
+             <Menu style="-fx-font-weight: bold; -fx-font-size: 20;" text="Noticias">
+                 <items>
+                     <MenuItem onAction="#editarNoticia" text="Editar Noticia" />
+                     <MenuItem onAction="#nuevaNoticia" text="Nueva Noticia" />
+                 </items>
+             </Menu>
+         </menus>
+         <stylesheets>
+             <URL value="@main.css" />
+         </stylesheets>
+     </MenuBar>
+</AnchorPane>
